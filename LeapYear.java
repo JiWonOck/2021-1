@@ -1,14 +1,21 @@
+import java.util.Scanner;
 
 public class LeapYear {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int year = 2021;
+		//»ç¿ëÀÚ ÀÔ·Â¹Ş±â
+		Scanner in=new Scanner(System.in);
+		int year;
 		boolean isLeapYear;
 		
-	  isLeapYear = ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0);
-	  System.out.println(isLeapYear);
-	  System.out.printf("%dë…„ë„ëŠ” ìœ¤ë…„: %s", year, isLeapYear);
+		System.out.printf("¿¬µµ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		year = in.nextInt();
+		
+		isLeapYear = (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
+		//»ïÇ×¿¬»êÀÚ »ç¿ëÇØ¼­ Ãâ·ÂÇÏ±â
+		System.out.printf(isLeapYear ? "À±³â" : "À±³âÀÌ ¾Æ´Ô");
+	
 		
 	}
 
