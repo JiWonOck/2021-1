@@ -6,21 +6,21 @@ public class WhileBreakUp {
 		// TODO Auto-generated method stub
 		
 		Scanner rd = new Scanner(System.in);
-		int input;	//Å°º¸µå ÀÔ·Â¹Ş±â
-		double sum = 0;	//¼öµéÀÇ Æò±Õ°ªÀ» À§ÇØ double·Î ¼±¾ğ
-		int count =0;	//ÀÔ·Â °³¼ö
+		int input;	//í‚¤ë³´ë“œ ì…ë ¥ë°›ê¸°
+		double sum = 0;	//ìˆ˜ë“¤ì˜ í‰ê· ê°’ì„ ìœ„í•´ doubleë¡œ ì„ ì–¸
+		int count =0;	//ì…ë ¥ ê°œìˆ˜
 		
-		//´ÜÀÏ while¹® ÀÛ¼ºÇÏ±â
-		input = 1;
+		System.out.print("í‰ê· ì„ êµ¬í•  ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” (ì…ë ¥ì„ ì¢…ë£Œí•˜ë ¤ë©´ 0ì„ ì…ë ¥): ");
 		
-		while(input != 0) {
-			System.out.print("Æò±ÕÀ» ±¸ÇÒ ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä (ÀÔ·ÂÀ» Á¾·áÇÏ·Á¸é 0À» ÀÔ·Â): ");
-			input = rd.nextInt();
-		
+		//ë‹¨ì¼ whileë¬¸ ì‘ì„±í•˜ê¸°
+		while((input = rd.nextInt()) != 0 ) {
 			sum+= input;
 			count ++;
+			
+			System.out.print("í‰ê· ì„ êµ¬í•  ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” (ì…ë ¥ì„ ì¢…ë£Œí•˜ë ¤ë©´ 0ì„ ì…ë ¥): ");
+
 		}
-		System.out.printf("ÀÔ·ÂµÈ ¼öÀÇ °³¼ö´Â %d°³, Æò±ÕÀº %.1fÀÔ´Ï´Ù.", count-1, sum/(count-1) );
+		System.out.printf("ì…ë ¥ëœ ìˆ˜ì˜ ê°œìˆ˜ëŠ” %dê°œ, í‰ê· ì€ %.1fì…ë‹ˆë‹¤.", count-1, sum/(count-1) );
 	}
 
 }
