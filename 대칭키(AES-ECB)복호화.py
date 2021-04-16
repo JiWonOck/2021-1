@@ -25,7 +25,7 @@ class AESCipher(object):
         return s
         #return s[:-ord(s[len(s)-1:])]
 
-encrypted = '7CzMZTpIAmP2VR194bH/I+9CVkqCgRUnlX0cDYKdI1jJGicty8HzRmwHb5BBvD8wQOUq5EzYql9LiwUW4qyVK7rfl0pLOGfoDQWkABpPP71IhRrBitWz2SePsq76snG1' #AES-ECB모드로 암호화된 데이터
+encrypted = 'AES-ECB모드로 암호화된 데이터'
 
 if __name__ == '__main__':
     key = 'veryveryeasy????'   #key는 16바이트, ????자리 반복문으로 알아내기
